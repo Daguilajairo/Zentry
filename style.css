@@ -80,8 +80,8 @@
     transform: translateY(0);
   }
 
-  .section-bg {
-  background-image: url('img/background-image.png');
+.section-bg {
+  background-image: url('/background-image.png');
   background-size: cover;
   background-position: center;
 }
