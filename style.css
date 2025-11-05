@@ -79,3 +79,9 @@
     opacity: 1;
     transform: translateY(0);
   }
+
+  .section-bg {
+  background-image: url('img/background-image.png');
+  background-size: cover;
+  background-position: center;
+}
