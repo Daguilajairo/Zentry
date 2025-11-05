@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Adamina&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Gothic&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Zentry</title>
+</head>
+
+<body class="overflow-x-hidden scroll-smooth">
+    <!-- Header-->
+    <header id="inicio" class="bg-[#0A0F1E]  w-full h-15 p-4  ">
+        <nav class="flex  justify-between ">
+            <div class="flex gap-1 hover:scale-110">
+                <img class="w-8 h-8" src="../Img/logo.png" alt="">
+                <h1 class="text-xl text-[#00AEEF] font-[Orbitron] font-bold drop-shadow-[0_0_16px_#00AEEF]">Zentry</h1>
+            </div>
+
+            <img id="menu-btn"
+                class="bg-[#0A0F1E] rounded-lg drop-shadow-[0_0_8px_#00AEEF] hover:scale-110 w-8 h-8 cursor-pointer md:invisible"
+                src="../Img/icon-hamburguer.png" alt="">
+
+            <!-- Menu de navegação -->
+            <div id="menu"
+                class="hidden flex flex-col items-center gap-4 bg-[#0A0F1E] text-[#00AEEF] absolute top-16 left-0 w-full py-6 md:flex md:static md:flex-row  md:justify-end md:p-0 md:gap-8 md:bg-transparent md:text-white transition-all duration-300">
+                <a href="#"
+                    class="text-xl cursor-pointer hover:drop-shadow-[0_0_8px_#00AEEF] hover:scale-110 hover:text-[#00AEEF] transition">Início</a>
+                <a href="#servicos"
+                    class="text-xl cursor-pointer hover:drop-shadow-[0_0_8px_#00AEEF] hover:scale-110 hover:text-[#00AEEF] transition">Serviços</a>
+                <a href="#sobre__nos"
+                    class="text-xl cursor-pointer hover:drop-shadow-[0_0_8px_#00AEEF] hover:scale-110 hover:text-[#00AEEF] transition">Sobre</a>
+                <a href="#galeria"
+                    class="text-xl cursor-pointer hover:drop-shadow-[0_0_8px_#00AEEF] hover:scale-110 hover:text-[#00AEEF] transition">Galeria</a>
+                <a href="#contato"
+                    class="text-xl cursor-pointer hover:drop-shadow-[0_0_8px_#00AEEF] hover:scale-110 hover:text-[#00AEEF] transition">Contato</a>
+            </div>
+        </nav>
+
+
+    </header>
+    <!-- Corpo do site-->
+    <main>
+        <!-- section 01 - Bem Vindo-->
+        <section
+            class="w-full h-180 flex flex-col items-center justify-center  bg-blue-200 bg-[url('/img/background-image.png')] bg-cover bg-center ">
+            <div class="flex flex-col justify-center items-center gap-20 px-4 py-2">
+                <h2 class="text-3xl font-semibold text-white font-[Orbitron] md:text-5xl xl:text-6xl">Bem-vindo ao
+                    <br><span
+                        class="text-[#00AEEF] drop-shadow-[0_0_16px_#00AEEF] font-bold flex justify-center font-[Orbitron]">Zentry</span>
+                </h2>
+                <p class="text-center text-xl max-w-md text-white font-[Inter]">A porta de entrada para o futuro
+                    digital.
+                </p>
+                <button id="btnComecar"
+                    class="px-10 py-4 bg-black/20 text-xl rounded-xl text-white text-center  hover:bg-[#0A0F1E] transition shadow-md font-[Orbitron] hover:drop-shadow-[0_0_8px_#00AEEF] hover:scale-110 cursor-pointer">Começar</button>
+            </div>
+        </section>
+
+        <!-- section 02 - Serviços-->
+        <section id="servicos" class="w-full h-full flex flex-col items-center pt-10 bg-[#0A0F1E] pb-5 gap-10">
+
+            <!-- título -->
+            <div class="reveal flex justify-center items-center gap-2 px-10 py-4 bg-stone-700/20 rounded-4xl">
+                <img class="animate-pulse-glow w-10 h-10 rounded-lg drop-shadow-[0_0_8px_#00AEEF]"
+                    src="../Img/servicos-img.png" alt="">
+                <h1 class="text-xl text-[#00AEEF] font-bold font-[Orbitron]">Nossos Serviços</h1>
+            </div>
+
+            <div class="reveal flex flex-col justify-center items-center gap-4 px-10 py-4">
+                <h1 class="text-2xl text-white font-[Orbitron]">
+                    Soluções <span
+                        class="font-[Orbitron] text-[#00AEEF] drop-shadow-[0_0_8px_#00AEEF] text-2xl">Inovadoras</span>
+                </h1>
+                <p class="reveal text-stone-50 text-center text-xl">
+                    Oferecemos um portfólio completo de serviços tecnológicos para impulsionar você ou sua empresa rumo
+                    ao futuro digital.
+                </p>
+            </div>
+
+            <!-- grid de cards -->
+            <div class="reveal grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+                <!-- card 01 -->
+                <div
+                    class="group bg-stone-700/20 w-80 h-125 pt-8 flex flex-col shadow-lg gap-2 px-10 py-4 rounded-4xl transition-all hover:scale-110 hover:shadow-[0_0_12px_#00AEEF] hover:bg-stone-500/30">
+                    <img class="w-20 h-20 bg-cover drop-shadow-[0_0_12px_#00AEEF]" src="../Img/icon-smartphone.png"
+                        alt="">
+                    <div class="pt-8 flex flex-col gap-2">
+                        <h1
+                            class="text-2xl text-white font-bold font-[Orbitron] transition-colors duration-300 group-hover:text-[#00AEEF]">
+                            Design</h1>
+                        <p class="font-[Inter] text-stone-400 text-lg">Criação de designs personalizados que se destacam
+                            e geram insights inteligentes para seu negócio.</p>
+                        <ul class="list-disc text-stone-400 font-[Inter] text-lg">
+                            <li>Figma</li>
+                            <li>Adobe XD</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- card 02 -->
+                <div
+                    class="group bg-stone-700/20 w-80 h-125 pt-8 flex flex-col shadow-lg gap-2 px-10 py-4 rounded-4xl hover:scale-110 transition hover:shadow-[0_0_12px_#00AEEF] hover:bg-stone-500/30">
+                    <img class="w-20 h-20 bg-cover drop-shadow-[0_0_12px_#00AEEF]" src="../Img/icon-aviao.png" alt="">
+                    <div class="pt-8 flex flex-col gap-2">
+                        <h1
+                            class="text-2xl text-white font-bold font-[Orbitron] transition-colors duration-300 group-hover:text-[#00AEEF]">
+                            Desenvolvimento Web</h1>
+                        <p class="font-[Inter] text-stone-400 text-lg">Aplicações web modernas, responsivas e de alta
+                            performance usando as tecnologias mais avançadas.</p>
+                        <ul class="list-disc text-stone-400 font-[Inter] text-lg columns-2">
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>Tailwindcss</li>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- card 03 -->
+                <div
+                    class="group bg-stone-700/20 w-80 h-125 pt-8 flex flex-col shadow-lg gap-2 px-10 py-4 rounded-4xl hover:scale-110 transition hover:shadow-[0_0_12px_#00AEEF] hover:bg-stone-500/30">
+                    <img class="w-20 h-20 bg-cover drop-shadow-[0_0_12px_#00AEEF]" src="../Img/icon-computador.png"
+                        alt="">
+                    <div class="pt-8 flex flex-col gap-2">
+                        <h1
+                            class="text-2xl text-white font-bold font-[Orbitron] transition-colors duration-300 group-hover:text-[#00AEEF]">
+                            Criação de sistemas Web</h1>
+                        <p class="font-[Inter] text-stone-400 text-lg">Sistemas web de baixa, média e alta complexidade,
+                            responsivos e de alta performance.</p>
+                        <ul class="list-disc text-stone-400 font-[Inter] text-lg columns-2">
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>Tailwindcss</li>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- section 03 - Sobre nós-->
+        <section id="sobre__nos" class="w-full h-full flex flex-col items-center pt-10  bg-[#11182D] pb-5 gap-8 ">
+
+            <div class="reveal flex  justify-center items-center  gap-2 px-10 py-4 bg-stone-700/20 rounded-4xl ">
+                <img class=" animate-pulse-glow  rounded-lg drop-shadow-[0_0_8px_#00AEEF] w-10 h-10"
+                    src="../Img/icon-equipe.png" alt="">
+                <h1 class="text-xl text-[#00AEEF] font-bold font-[Orbitron]"> Sobre Nós</h1>
+            </div>
+            <div class="reveal flex flex-col  justify-center items-center  gap-4 px-10 py-4">
+                <h1 class=" text-2xl text-white font-[Orbitron]">Mudando o <span
+                        class=" font-[Orbitron] text-[#00AEEF] drop-shadow-[0_0_8px_#00AEEF]  text-2xl">Amanhã</span>
+                </h1>
+                <p class="reveal text-stone-50 text-center text-xl">Somos pioneiros em transformação digital, combinando
+                    criatividade e tecnologia para criar soluções que transcendem expectativas.</p>
+            </div>
+
+            <!-- Card 01 -->
+            <div class="flex flex-col gap-6 md:reveal md:grid md:grid-cols-4 md:gap-6 ">
+                <div>
+                    <div
+                        class="group bg-stone-50 w-40 h-40 pt-4 flex flex-col justify-center items-center shadow-lg  pl-10 px-10 py-2 bg-stone-700/20 rounded-4xl  hover:shadow-[0_0_12px_#00AEEF] hover:bg-stone-500/30">
+                        <div>
+                            <img class="w-10 h-10 bg-cover drop-shadow-[0_0_12px_#00AEEF] "
+                                src="../Img/icon-colaboradores.png" alt="">
+                        </div>
+                        <div class="pt-4 w-70 flex flex-col justify-center items-center gap-1 ">
+                            <h1 class="text-2xl text-white font-bold font-[Orbitron]">150+</h1>
+                            <p class="font-[Inter] text-stone-400 text-lg">Especialistas </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 02 -->
+                <div>
+                    <div
+                        class="reveal group bg-stone-50 w-40 h-40  flex flex-col justify-center items-center shadow-lg gap-2 pl-10 px-10 py-2 bg-stone-700/20 rounded-4xl  hover:shadow-[0_0_12px_#00AEEF] hover:bg-stone-500/30">
+                        <div>
+                            <img class="w-10 h-10 bg-cover drop-shadow-[0_0_12px_#00AEEF] "
+                                src="../Img/icon-medalha.png" alt="">
+                        </div>
+                        <div class="reveal pt-4 w-70 flex flex-col justify-center items-center gap-1 ">
+                            <h1 class="text-2xl text-white font-bold font-[Orbitron]">50+</h1>
+                            <p class="font-[Inter] text-stone-400 text-lg">Projetos </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 03 -->
+                <div>
+                    <div
+                        class="reveal group bg-stone-50 w-40 h-40  flex flex-col justify-center items-center shadow-lg gap-2  pl-10 px-10 py-2 bg-stone-700/20 rounded-4xl  hover:shadow-[0_0_12px_#00AEEF] hover:bg-stone-500/30">
+                        <div>
+                            <img class=" reveal w-10 h-10 bg-cover drop-shadow-[0_0_12px_#00AEEF] "
+                                src="../Img/icon-terra.png" alt="">
+                        </div>
+                        <div class="reveal pt-4 w-70 flex flex-col justify-center items-center gap-1 ">
+                            <h1 class="text-2xl text-white font-bold font-[Orbitron]">8+</h1>
+                            <p class="font-[Inter] text-stone-400 text-lg">Cidades </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 04 -->
+                <div>
+                    <div
+                        class="reveal group bg-stone-50 w-40 h-40  flex flex-col justify-center items-center shadow-lg gap-2 mb-8 pl-10 px-10 py-2 bg-stone-700/20 rounded-4xl  hover:shadow-[0_0_12px_#00AEEF] hover:bg-stone-500/30">
+                        <div>
+                            <img class="reveal w-10 h-10 bg-cover drop-shadow-[0_0_12px_#00AEEF] "
+                                src="../Img/icon-medalha.png" alt="">
+                        </div>
+                        <div class="reveal pt-4 w-70 flex flex-col justify-center items-center gap-1 ">
+                            <h1 class="text-2xl text-white font-bold font-[Orbitron]">99%</h1>
+                            <p class="font-[Inter] text-stone-400 text-lg">Satisfação </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nossa jornada -->
+            <div class="flex mb-5 reveal">
+                <h1 class="text-2xl text-white font-[Orbitron]">Nossa <span
+                        class="font-[Orbitron] text-[#00AEEF] drop-shadow-[0_0_8px_#00AEEF]  text-2xl">Jornada</span>
+                </h1>
+            </div>
+
+            <!-- Informação 1 -->
+            <div class="flex flex-col justify-center items-center">
+
+                <div class=" flex flex-col gap-8 pl-5 ">
+                    <div class="reveal flex gap-4">
+                        <div class="reveal flex flex-col items-center">
+                            <img class="w-16 h-13 hover:animate-pulse-glow-2" src="../Img/icon-luz.png" alt="">
+                            <span class="block w-[2px] h-20 bg-gradient-to-b from-[#00AEEF] to-transparent mt-2"></span>
+                        </div>
+                        <div>
+                            <div class=" reveal flex items-center gap-1">
+                                <h1 class="text-2xl text-white font-[Orbitron] ">Jan - 2024</h1>
+                                <h1
+                                    class="relative inline-block after:content-[''] after:block after:h-[2px] after:w-32 after:bg-gradient-to-r after:from-[#00AEEF] after:to-transparent after:mt-1">
+                                </h1>
+                            </div>
+
+                            <h1 class="reveal  text-xl text-white font-[Orbitron]">Fundação</h1>
+                            <p class="reveal font-[Inter] text-stone-400 text-lg">Início da jornada com foco em inovação
+                                tecnológica</p>
+                        </div>
+                    </div>
+
+                    <!-- Informação 2 -->
+                    <div class="flex flex-col gap-8 ">
+                        <div class="reveal flex gap-4">
+                            <div class=" reveal flex flex-col items-center">
+                                <img class="w-12 h-12 hover:animate-pulse-glow-2" src="../Img/icon-terra.png" alt="">
+                                <span
+                                    class="block w-[2px] h-20 bg-gradient-to-b from-[#00AEEF] to-transparent mt-2"></span>
+                            </div>
+                            <div>
+                                <div class=" reveal flex items-center gap-1">
+                                    <h1 class="text-2xl text-white font-[Orbitron] ">Dez - 2024</h1>
+                                    <h1
+                                        class="relative inline-block after:content-[''] after:block after:h-[2px] after:w-32 after:bg-gradient-to-r after:from-[#00AEEF] after:to-transparent after:mt-1">
+                                    </h1>
+                                </div>
+
+                                <h1 class=" reveal text-xl text-white font-[Orbitron]">Expansão</h1>
+                                <p class=" reveal font-[Inter] text-stone-400 text-lg">Alcance de nosso 50° cliente</p>
+                            </div>
+                        </div>
+
+                        <!-- Informação 3 -->
+                        <div class="flex flex-col gap-8 ">
+                            <div class=" reveal flex gap-4">
+                                <div class=" reveal  flex flex-col items-center">
+                                    <img class="w-16 h-12 hover:animate-pulse-glow-2" src="../Img/icon-flexa-alvo.png"
+                                        alt="">
+                                    <span
+                                        class="block w-[2px] h-20 bg-gradient-to-b from-[#00AEEF] to-transparent mt-2"></span>
+                                </div>
+                                <div>
+                                    <div class="reveal flex items-center gap-1">
+                                        <h1 class="text-2xl text-white font-[Orbitron] ">2025</h1>
+                                        <h1
+                                            class="relative inline-block after:content-[''] after:block after:h-[2px] after:w-32 after:bg-gradient-to-r after:from-[#00AEEF] after:to-transparent after:mt-1">
+                                        </h1>
+                                    </div>
+
+                                    <h1 class=" reveal text-xl text-white font-[Orbitron]">Futuro Hoje</h1>
+                                    <p class=" reveal font-[Inter] text-stone-400 text-lg">Continuamos inovando e
+                                        definindo
+                                        o futuro
+                                        da
+                                        tecnologia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nossos valores -->
+                <div class="reveal flex mb-5 justify-center items-center">
+                    <h1 class="text-2xl text-white font-[Orbitron] mt-15">
+                        Nossos <span class="text-[#00AEEF] drop-shadow-[0_0_8px_#00AEEF]">Valores</span>
+                    </h1>
+                </div>
+
+                <!-- Container dos cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 xl:grid-cols-4">
+
+                    <!-- Card 01 -->
+                    <div class="reveal flex flex-col justify-center items-center">
+                        <div
+                            class="group bg-stone-700/20 w-75 h-65 pt-8 flex flex-col shadow-lg gap-2 px-8 py-4 rounded-4xl transition-all hover:shadow-[0_0_12px_#00AEEF] hover:bg-stone-500/30">
+                            <img class="w-15 h-15 bg-cover drop-shadow-[0_0_12px_#00AEEF]" src="../Img/icon-luz.png"
+                                alt="">
+                            <h1 class="text-2xl text-white font-bold font-[Orbitron] group-hover:text-[#00AEEF]">
+                                Inovação</h1>
+                            <p class="font-[Inter] text-stone-400 text-lg">Sempre na vanguarda tecnológica</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 02 -->
+                    <div class="reveal flex flex-col justify-center items-center">
+                        <div
+                            class="group bg-stone-700/20 w-75 h-65 pt-8 flex flex-col shadow-lg gap-2 px-8 py-4 rounded-4xl transition-all hover:shadow-[0_0_12px_#00AEEF] hover:bg-stone-500/30">
+                            <img class="w-15 h-15 bg-cover drop-shadow-[0_0_12px_#00AEEF]"
+                                src="../Img/icon-colaboradores.png" alt="">
+                            <h1 class="text-2xl text-white font-bold font-[Orbitron] group-hover:text-[#00AEEF]">
+                                Colaboração</h1>
+                            <p class="font-[Inter] text-stone-400 text-lg">Trabalho em equipe e parcerias sólidas.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 03 -->
+                    <div class="reveal flex flex-col justify-center items-center">
+                        <div
+                            class="group bg-stone-700/20 w-75 h-65 pt-8 flex flex-col shadow-lg gap-2 px-8 py-4 rounded-4xl transition-all hover:shadow-[0_0_12px_#00AEEF] hover:bg-stone-500/30">
+                            <img class="w-15 h-15 bg-cover drop-shadow-[0_0_12px_#00AEEF]"
+                                src="../Img/icon-flexa-alvo.png" alt="">
+                            <h1 class="text-2xl text-white font-bold font-[Orbitron] group-hover:text-[#00AEEF]">
+                                Excelência</h1>
+                            <p class="font-[Inter] text-stone-400 text-lg">Qualidade superior em cada projeto.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 04 -->
+                    <div class="reveal flex flex-col justify-center items-center">
+                        <div
+                            class="group bg-stone-700/20 w-75 h-65 pt-8 flex flex-col shadow-lg gap-2 px-8 py-4 rounded-4xl transition-all hover:shadow-[0_0_12px_#00AEEF] hover:bg-stone-500/30">
+                            <img class="w-15 h-15 bg-cover drop-shadow-[0_0_12px_#00AEEF]" src="../Img/icon-check.png"
+                                alt="">
+                            <h1 class="text-2xl text-white font-bold font-[Orbitron] group-hover:text-[#00AEEF]">
+                                Confiabilidade</h1>
+                            <p class="font-[Inter] text-stone-400 text-lg">Compromisso com resultados consistentes.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 05 -->
+                    <div class="reveal flex flex-col justify-center items-center">
+                        <div
+                            class="group bg-stone-700/20 w-75 h-80 pt-4 flex flex-col shadow-lg gap-2 px-8 py-4 rounded-4xl transition-all hover:shadow-[0_0_12px_#00AEEF] hover:bg-stone-500/30">
+                            <h1 class="text-2xl text-white font-bold font-[Orbitron]">
+                                Nossa <span class="text-[#00AEEF] drop-shadow-[0_0_8px_#00AEEF]">Missão</span>
+                            </h1>
+                            <p class="font-[Inter] text-stone-400 text-lg">
+                                Capacitar pessoas e empresas através de soluções tecnológicas inovadoras, transformando
+                                desafios complexos em oportunidades de crescimento e criando um futuro mais conectado e
+                                inteligente.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+        </section>
+
+
+
+
+        <!-- section 04 Galeria-->
+        <section id="galeria" class="w-full h-full flex flex-col items-center pt-10  bg-[#0A0F1E] pb-5 gap-8">
+
+            <div class=" reveal flex flex-col justify-center items-center px-4 py-2 gap-2">
+                <h1 class="text-4xl text-[#00AEEF] drop-shadow-[0_0_16px_#00AEEF] font-bold font-[Orbitron]">Galeria
+                </h1>
+                <p class="text-white text-lg font-semibold font-[Inter]">Explore nossas criações inovadoras.</p>
+            </div>
+
+            <div
+                class="reveal grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 px-4 py-2 justify-center items-center xl:grid-cols-4">
+                <!-- imagem 01-->
+
+                <a href="https://serenatocoffe.vercel.app/" target="_blank">
+                    <div class=" reveal hover:shadow-[0_0_16px_#00AEEF] cursor-pointer">
+                        <img class=" w-72 h-72 rounded-t-2xl shadow-lg" src="../Img/portifolio-1.png" alt="">
+                        <div
+                            class=" reveal w-72 h-30 pt-5 flex flex-col shadow-lg bg-[#11182D] gap-4 pl-2 rounded-b-2xl rounded-b-2xl">
+                            <h1
+                                class="text-xl font-bold font-[Orbitron]  text-[#00AEEF] drop-shadow-[0_0_16px_#00AEEF]">
+                                Cafeteria</h1>
+                            <p class="font-[Inter] text-white text-white">Criação de site para uma cafeteria moderna e
+                                elegante.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <!-- imagem 02-->
+                <a href="https://luzecenacine.vercel.app/" target="_blank">
+                    <div class=" reveal hover:shadow-[0_0_16px_#00AEEF] cursor-pointer">
+                        <img class=" w-72 h-72 rounded-t-2xl shadow-lg" src="../Img/portifolio-2.png" alt="">
+                        <div
+                            class=" reveal bg-[#11182D] h-30 w-72 pt-5 flex flex-col  shadow-lg  gap-2 pl-2 rounded-b-2xl">
+                            <h1 class="text-xl font-bold font-[Orbitron] text-[#00AEEF] drop-shadow-[0_0_16px_#00AEEF]">
+                                Luz
+                                e
+                                Cena</h1>
+                            <p class="font-[Inter] text-white">Criação de um protótipo para site de cinemas.</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- imagem 03-->
+                <a href="https://tech-company-ten.vercel.app/frontend/login.html" target="_blank">
+                    <div class=" reveal hover:shadow-[0_0_16px_#00AEEF] cursor-pointer">
+                        <img class=" w-72 h-72 rounded-t-2xl shadow-lg bg-cover bg-center"
+                            src="../Img/portifolio-3.png " alt="">
+                        <div
+                            class=" reveal bg-[#11182D] h-30 w-72 pt-5 flex flex-col shadow-lg gap-2 pl-2 rounded-b-2xl">
+                            <h1 class="text-xl font-bold font-[Orbitron] text-[#00AEEF] drop-shadow-[0_0_16px_#00AEEF]">
+                                Tech
+                                Company</h1>
+                            <p class="font-[Inter] text-white">Site de Tecnologia voltada para criação e analise de
+                                dashboard.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- imagem 04-->
+                <a href="https://iron-man-six.vercel.app/index.html" target="_blank">
+                    <div class="reveal hover:shadow-[0_0_16px_#00AEEF] cursor-pointer">
+                        <img class=" w-72 h-72 rounded-t-2xl shadow-lg bg-cover bg-center"
+                            src="../Img/portifolio-04.png " alt="">
+                        <div
+                            class="reveal bg-[#11182D] h-34 w-72 pt-5 flex flex-col shadow-lg gap-2 pl-2 rounded-b-2xl pr-1">
+                            <h1 class="text-xl font-bold font-[Orbitron] text-[#00AEEF] drop-shadow-[0_0_16px_#00AEEF]">
+                                Landing
+                                Page Iron Man</h1>
+                            <p class="font-[Inter] text-white">Landing page criada para admiradores do personagem Homem
+                                de
+                                Ferro.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- imagem 05-->
+                <a href="https://fokuspomodorolife.vercel.app/" target="_blank">
+                    <div class="reveal hover:shadow-[0_0_16px_#00AEEF] cursor-pointer">
+                        <img class=" w-72 h-72 rounded-t-2xl shadow-lg bg-cover bg-center"
+                            src="../Img/portifolio-5.png " alt="">
+                        <div
+                            class=" reveal bg-[#11182D] h-30 w-72 pt-5 flex flex-col shadow-lg gap-2 pl-2 rounded-b-2xl">
+                            <h1 class="text-xl font-bold font-[Orbitron] text-[#00AEEF] drop-shadow-[0_0_16px_#00AEEF]">
+                                Fokus
+                            </h1>
+                            <p class="font-[Inter] text-white">Sitema moderno de Técnica Pomodoro.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- imagem 06-->
+                <a href="https://gerador-de-ingresso.vercel.app/" target="_blank">
+                    <div class=" reveal hover:shadow-[0_0_16px_#00AEEF] cursor-pointer">
+                        <img class=" w-72 h-72 rounded-t-2xl shadow-lg bg-cover bg-center"
+                            src="../Img/portifolio-6.png " alt="">
+                        <div
+                            class=" reveal bg-[#11182D] h-30 w-72 pt-5 flex flex-col shadow-lg gap-2 pl-2 rounded-b-2xl">
+                            <h1 class="text-xl font-bold font-[Orbitron] text-[#00AEEF] drop-shadow-[0_0_16px_#00AEEF]">
+                                Gerador
+                                de Ingressos</h1>
+                            <p class="font-[Inter] text-white">Site de Tecnologia com objetivo de criar Ingressos.</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- imagem 07-->
+                <a href="https://jogodasorte.vercel.app/" target="_blank">
+                    <div class=" reveal hover:shadow-[0_0_16px_#00AEEF] cursor-pointer">
+                        <img class=" w-72 h-72 rounded-t-2xl shadow-lg bg-cover bg-center"
+                            src="../Img/portifolio-7.png " alt="">
+                        <div
+                            class="reveal bg-[#11182D] h-30 w-72 pt-5 flex flex-col shadow-lg gap-2 pl-2 rounded-b-2xl">
+                            <h1 class="text-xl font-bold font-[Orbitron] text-[#00AEEF] drop-shadow-[0_0_16px_#00AEEF]">
+                                Número
+                                Secreto</h1>
+                            <p class="font-[Inter] text-white">Jogo Criado em modalidade Web com finalidade de passa
+                                tempo.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+        </section>
+
+        <!-- section 05 Contato-->
+        <section id="contato" class="w-full h-full flex flex-col items-center pt-10  bg-[#11182D] pb-5 gap-6">
+
+            <div class=" reveal  flex  justify-center items-center  gap-2 px-10 py-4 bg-stone-700/20 rounded-4xl ">
+                <img class=" animate-pulse-glow w-10 h-10 rounded-lg drop-shadow-[0_0_8px_#00AEEF]"
+                    src="../Img/icon-mensagem.png" alt="">
+                <h1 class="text-xl text-[#00AEEF] font-bold font-[Orbitron]"> Entre em contato</h1>
+            </div>
+
+            <div>
+                <div class="reveal flex flex-col justify-center items-center px-4 py-2 gap-2">
+                    <h1 class=" text-2xl text-white font-[Orbitron]">Vamos <span
+                            class=" font-[Orbitron] text-[#00AEEF] drop-shadow-[0_0_8px_#00AEEF]  text-2xl">Conversar</span>
+                    </h1>
+                </div>
+
+                <div class="reveal flex text-center justify-center items-center">
+                    <p class="font-[Inter] text-white text-lg p-4">
+                        Pronto para transformar sua ideia em realidade? Nossa equipe está aqui para ajudar você a dar o
+                        próximo passo rumo ao futuro.
+                    </p>
+                </div>
+            </div>
+
+            <div class=" reveal flex flex-col justify-center items-center px-4 py-2 gap-2">
+                <h1 class=" text-2xl text-white font-[Orbitron]">Envie Sua <span
+                        class=" font-[Orbitron] text-[#00AEEF] drop-shadow-[0_0_8px_#00AEEF]  text-2xl">Mensagem</span>
+                </h1>
+                <div class=" reveal flex text-center">
+                    <p class="font-[Inter] text-white text-lg pt-2 ">
+                        Preencha o formulário e nossa equipe entrará em contato em breve.
+                    </p>
+                </div>
+            </div>
+
+            <form id="form-contato" class="reveal flex flex-col gap-2 pb-5">
+                <input id="nome" type="text" placeholder="Seu Nome" required
+                    class="xl:w-100 w-80 h-12 pl-6 bg-stone-700/20 text-stone-400 text-lg rounded-4xl border border-transparent focus:border-[#00AEEF] outline-none transition-all duration-300">
+                <input id="email" type="email" placeholder="Seu E-mail" required
+                    class="xl:w-100 w-80 h-12 pl-6 bg-stone-700/20 text-stone-400 text-lg rounded-4xl border border-transparent focus:border-[#00AEEF] outline-none transition-all duration-300">
+                <input id="empresa" type="text" placeholder="Sua Empresa (opcional)"
+                    class="xl:w-100 w-80 h-12 pl-6 bg-stone-700/20 text-stone-400 text-lg rounded-4xl border border-transparent focus:border-[#00AEEF] outline-none transition-all duration-300">
+                <textarea id="mensagem" rows="4" placeholder="Digite sua mensagem..." required
+                    class="xl:w-100 w-80 bg-stone-700/20 text-stone-400 p-3 rounded-xl border border-transparent focus:border-[#00AEEF] outline-none resize-none transition-all duration-300"></textarea>
+
+                <button id="enviarBtn" type="submit"
+                    class="mt-4 px-8 py-4 bg-black/20 text-xl rounded-xl text-white hover:bg-[#0A0F1E] transition shadow-md font-[Orbitron] hover:drop-shadow-[0_0_8px_#00AEEF]">
+                    Enviar
+                </button>
+            </form>
+        </section>
+
+        <!-- section 06 informações de contato-->
+        <section class="w-full h-full flex flex-col items-center pt-10 bg-[#11182D] pb-5 gap-4">
+
+            <div>
+                <div class="reveal flex flex-col justify-center items-center px-4 py-2 gap-2">
+                    <h1 class="text-2xl text-white font-[Orbitron]">
+                        Informações de <span
+                            class="font-[Orbitron] text-[#00AEEF] drop-shadow-[0_0_8px_#00AEEF] text-2xl">
+                            Contato
+                        </span>
+                    </h1>
+                </div>
+
+                <div class="reveal flex text-center justify-center items-center">
+                    <p class="font-[Inter] text-white text-lg p-4">
+                        Entre em contato através de qualquer um dos canais abaixo.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Grid dos cards -->
+            <div class="md:grid md:grid-cols-2 md:gap-6">
+
+                <!-- Card 01 -->
+                <div class="reveal flex flex-col justify-center items-center pt-6">
+                    <div
+                        class="group bg-stone-700/20 w-70 h-60 pt-8 flex flex-col shadow-lg gap-2 px-8 py-4 rounded-4xl transition-all hover:shadow-[0_0_12px_#00AEEF] hover:bg-stone-500/30">
+
+                        <img class="w-12 h-12 bg-cover drop-shadow-[0_0_12px_#00AEEF] hover:animate-pulse-glow-2"
+                            src="../Img/icon-email.png" alt="">
+
+                        <div class="pt-4 w-70 flex flex-col gap-2">
+                            <h1
+                                class="text-2xl text-white font-bold font-[Orbitron] transition-colors duration-300 group-hover:text-[#00AEEF]">
+                                Email
+                            </h1>
+                            <p class="font-[Inter] text-white drop-shadow-[0_0_12px_#00AEEF] text-lg">
+                                Zentry.group@gmail.com
+                            </p>
+                            <p class="font-[Inter] text-stone-400 text-lg">
+                                Resposta em até 24 horas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 02 -->
+                <div class="reveal flex flex-col justify-center items-center pt-6">
+                    <div
+                        class="group bg-stone-700/20 w-70 h-60 pt-8 flex flex-col shadow-lg gap-2 px-8 py-4 rounded-4xl transition-all hover:shadow-[0_0_12px_#00AEEF] hover:bg-stone-500/30">
+
+                        <img class="w-12 h-12 bg-cover drop-shadow-[0_0_12px_#00AEEF] hover:animate-pulse-glow-2"
+                            src="../Img/icon-telefone.png" alt="">
+
+                        <div class="pt-4 w-70 flex flex-col gap-2">
+                            <h1
+                                class="text-2xl text-white font-bold font-[Orbitron] transition-colors duration-300 group-hover:text-[#00AEEF]">
+                                Whatsapp
+                            </h1>
+                            <p class="font-[Inter] text-white drop-shadow-[0_0_12px_#00AEEF] text-lg">
+                                +55 21 96696-0869
+                            </p>
+                            <p class="font-[Inter] text-stone-400 text-lg">
+                                Seg-Sex de 09h às 18h.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 03 -->
+            <div class="reveal flex flex-col justify-center items-center pt-6">
+                <div
+                    class=" reveal group bg-stone-700/20 w-90 h-60 pt-8 flex flex-col shadow-lg gap-2 px-8 py-4 rounded-4xl transition-all hover:shadow-[0_0_12px_#00AEEF] hover:bg-stone-500/30">
+
+                    <div class="reveal pt-2 w-70 flex flex-col text-center gap-2 ">
+                        <h1
+                            class="text-2xl text-white font-bold font-[Orbitron] transition-colors duration-300 group-hover:text-[#00AEEF]">
+                            Siga-nos na nossa <br><span
+                                class=" font-[Orbitron] text-[#00AEEF] drop-shadow-[0_0_8px_#00AEEF]  text-2xl">Rede
+                                Social</span>
+                        </h1>
+
+                        <div class="reveal flex justify-center items-center gap-6">
+                            <a href="https://www.instagram.com/grupo.zentry/" target="_blank">
+                                <img class="mt-4 w-12 h-12 bg-cover drop-shadow-[0_0_12px_#00AEEF] hover:animate-pulse-glow-2 cursor-pointer"
+                                    src="../Img/icon-instagram.png" alt="">
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+            <!-- botao voltar-->
+            <div id="retornar" class=" flex flex-col justify-center items-center pt-6">
+                <div
+                    class="group bg-stone-700/20 w-20 h-20  flex flex-col shadow-lg gap-2  rounded-4xl transition-all hover:shadow-[0_0_12px_#00AEEF] hover:bg-stone-500/30">
+
+                    <div>
+                        <img class=" mt-4 w-25 h-12 bg-cover drop-shadow-[0_0_12px_#00AEEF] hover:animate-pulse-glow-2 cursor-pointer"
+                            src="../Img/icon-arrow.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+
+        </section>
+
+
+
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("e5t3S4kdaLWXQ47iX"); // sua chave pública
+  })();
+</script>
+    <script src="../Js/script.js"></script>
+  
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+@keyframes pulseGlow {
+      0%, 100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 10px #00AEEF);
+      }
+      50% {
+        transform: scale(1.08);
+        filter: drop-shadow(0 0 20px #00AEEF);
+      }
+    }
+
+    .animate-pulse-glow {
+      animation: pulseGlow 2s ease-in-out infinite;
+    }
+
+
+.custom-list {
+  list-style: none;
+  padding-top: 2rem;
+}
+
+
+.custom-list li {
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 0.5rem;
+  padding-left: 1.2rem;
+}
+
+
+.custom-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #00AEEF;
+  box-shadow: 0 0 8px #00AEEF, 0 0 12px #00AEEF;
+  animation: pulseMarker 2s ease-in-out infinite;
+}
+
+
+@keyframes pulseMarker {
+  0%, 100% {
+    box-shadow: 0 0 6px #00AEEF, 0 0 10px #00AEEF;
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 16px #00AEEF, 0 0 30px #00AEEF;
+    transform: scale(1.4);
+  }
+}
+
+ @layer utilities {
+    @keyframes pulse-glow {
+      0%, 100% {
+        filter: drop-shadow(0 0 6px #00AEEF);
+        opacity: 1;
+      }
+      50% {
+        filter: drop-shadow(0 0 16px #00AEEF);
+        opacity: 0.6;
+      }
+    }
+
+    .hover\:animate-pulse-glow-2:hover {
+      animation: pulse-glow 1s infinite;
+    }
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+  }
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
